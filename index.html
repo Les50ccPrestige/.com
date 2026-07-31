@@ -6,16 +6,19 @@
 
 <style>
 
-body {
-    background: #999;
-	color: white;
-	font-family: Arial, sans-serif;
+    body {
+	    margin: 0;
+		height: 100vh;
+        background-image: url("fond.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
 }
 
 .partenaire {
     text-align: center;
 	padding: 50px;
-	background; #1c1c1c;
+	background; #ffcc00;
 	border-radius: 20px;
 	margin: 50px;
 }
@@ -26,8 +29,9 @@ body {
 }
 
 .partenaire p {
-    margin: 20px;
-	font-size: 18px;
+      background-color: #ffcc00;
+      margin: 20px;
+	  font-size: 18px;
 }
 
 .bouton-moderne {
@@ -46,6 +50,43 @@ body {
 	transform: scale(1.1);
 }
 
+nav {
+    background-color: #1c1c1c;
+	padding: 15px 30px;
+	texte-align: center;
+	border-radius: 15px;
+	box-shadow: 0 0 15px rgba(255, 204, 0, 0.3);
+	animation: apparition 0.8s ease;
+}
+
+nav a {
+    display: inline-block;
+    color: white;
+	text-decoration: none;
+	transition: 0.3s ease;
+	margin: 0 20px;
+	font-size: 20px;
+	font-family: Arial, sans-serif;
+}
+
+nav a:hover {
+    color: #ffcc00;
+	transform: translateY(-5px);
+	text-shadow: 0 0 10px #FFCC00;
+}
+
+@keyframes apparition {
+    from {
+	    transform: translately(-50px);
+		opacity: 0;
+    }
+	
+	to { 
+	    transform: translately(0);
+		opacity: 1;
+		}
+}
+
 </style>
 
 </head>
@@ -60,7 +101,14 @@ body {
 Retrouver toutes les pièces et accessoires 50cc
 chez nos partenaire
 </p>
-	
+
+<nav>
+    <a href="index.html">Accueil</a>
+	<a href="partenaire.html">Partenaire</a>
+	<a href="Prix.html">Mes prix</a>
+</nav>
+
+<div class="partenaire">
     <a class="bouton-moderne"
 	href="https://50factory.com/" target="_blank">
 	    50factory
@@ -75,7 +123,7 @@ chez nos partenaire
 	href="https://maxiscoot.com/" target="_blank">
 	    maxiscoot
 	</a>
-	
+</div>
 </div>
 
 </body>
