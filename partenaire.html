@@ -1,15 +1,91 @@
+<style>
+
+
+.partenaire {
+    text-align: center;
+	padding: 50px;
+	background-color: black;
+	border-radius: 20px;
+	margin: 50px;
+}
+
+.partenaire h2 {
+    color: #ffcc00;
+	font-size: 35px;
+}
+
+.partenaire p {
+      background-color: black;
+      margin: 20px;
+	  font-size: 18px;
+}
+
+.bouton-moderne {
+    display: inline-block;
+	margin: 15px;
+	padding: 15px 60px;
+	background: #ffcc00;
+	color: black;
+	border-radius: 30px;
+	font-weight: bold;
+	transition: 0.3s;
+}
+
+.bouton:hover { 
+    background: white;
+	transform: scale(1.1);
+}
+
+nav {
+    background-color: #1c1c1c;
+	padding: 15px 30px;
+	texte-align: center;
+	border-radius: 15px;
+	box-shadow: 0 0 15px rgba(255, 204, 0, 0.3);
+	animation: apparition 0.8s ease;
+}
+
+nav a {
+    display: inline-block;
+    color: white;
+	text-decoration: none;
+	transition: 0.3s ease;
+	margin: 0 20px;
+	font-size: 20px;
+	font-family: Arial, sans-serif;
+}
+
+nav a:hover {
+    color: #ffcc00;
+	transform: translateY(-5px);
+	text-shadow: 0 0 10px #FFCC00;
+}
+
+@keyframes apparition {
+    from {
+	    transform: translately(-50px);
+		opacity: 0;
+    }
+	
+	to { 
+	    transform: translately(0);
+		opacity: 1;
+		}
+}
+
+</style>
+
 <div class="partenaire">
 
-<h2>Nos partenaire</h2>
+<h2>site 50cc</h2>
 
 <p>
 Retrouver toutes les pièces et accessoires 50cc
-chez nos partenaire
 </p>
 
 <nav>
     <a href="index.html">Accueil</a>
-	<a href="partenaire.html">Partenaire</a>
+	<a href="partenaire.html">site</a>
 	<a href="Prix.html">Mes prix</a>
 </nav>
 
